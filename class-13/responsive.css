@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    width: 100%;
+    max-width: 120rem;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.header {
+    background-color: #222;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.6rem;
+}
+
+.header p {
+    font-size: 1.4rem;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.sidebar {
+    background-color: #444;
+    color: white;
+    padding: 1.6rem;
+}
+
+.sidebar h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    font-size: 1.4rem;
+    padding: 0.6rem 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.card {
+    background-color: white;
+    padding: 2.4rem;
+    text-align: center;
+    font-size: 1.6rem;
+    border-radius: 0.6rem;
+}
+
+.footer {
+    background-color: #ccc;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 1.3rem;
+}
+
+/* MEDIA QUERIES */
