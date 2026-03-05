@@ -58,3 +58,45 @@ BOXES
     font-size: 1.6rem;
     box-shadow: var(--shadow);
 }
+
+/* =====================
+ANIMATIONS
+===================== */
+.transition-box {
+    background-color: var(--box-color);
+    transition: 
+        transform 0.4s ease,
+        background-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.transition-box:hover {
+    transform: translateY(-1rem scale(1.05));
+    background-color: #1e40af;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+}
+
+.animated-box {
+    background-color: var(--box-alt);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* =====================
+KEYFRAMES
+===================== */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.08);
+        opacity: 0.85;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
