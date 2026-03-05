@@ -46,6 +46,15 @@ NOTIFICATION (TRANSITION)
     background-color: var(--card-bg);
     padding: 2.8rem;
     border-radius: 1.4rem;
+    box-shadow: var(--shadow);
+    transition: 
+        transform 0.4s ease
+        box-shadow 0.4s ease;
+}
+
+.notification:hover {
+    transform: translateY(-0.8rem);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
 }
 
 .notification h2 {
@@ -57,4 +66,39 @@ NOTIFICATION (TRANSITION)
     font-size: 1.5rem;
     margin-top: 0.8rem;
     color: #555;
+}
+
+/* =====================
+PROGRESS BAR (ANIMATION)
+===================== */
+.progress {
+    height: 1.2rem;
+    background-color: #d1d5db;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background-color: var(--accent);
+    animation: load 3s ease-in-out infinite;
+}
+
+/* =====================
+KEYFRAMES
+===================== */
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+
+    60% {
+        width: 100%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
