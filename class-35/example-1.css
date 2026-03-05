@@ -1,0 +1,60 @@
+/* =====================
+VARIABLES
+===================== */
+:root {
+    --bg-main: #f4f6f8;
+    --box-color: #2563eb;
+    --box-alt: #22c55e;
+    --text-light: #ffffff;
+    --shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+/* =====================
+BASE
+===================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-main);
+    font-family: system-ui, Arial, sans-serif;
+}
+
+/* =====================
+LAYOUT
+===================== */
+.container {
+    max-width: 60rem;
+    margin: 8rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.title {
+    font-size: 2.8rem;
+    color: #1f2937;
+}
+
+/* =====================
+BOXES
+===================== */
+.box {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    font-size: 1.6rem;
+    box-shadow: var(--shadow);
+}

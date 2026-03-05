@@ -87,3 +87,66 @@ body {
 }
 
 /* MEDIA QUERIES */
+/* Always mobile first */
+
+/* Mobile */
+@media screen and (max-width: 30rem) {
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    .card {
+        font-size: 1.4rem;
+        padding: 1.6rem;
+    }
+}
+
+/*  Large mobile */
+@media screen and (min-width: 30.1rem) and (max-width: 60rem) {
+
+    .content {
+        gap: 1.9rem;
+    }
+}
+
+/*  Tablets / Small laptops */
+@media screen and (min-width: 60.1rem) and (max-width: 90rem) {
+    
+    .layout {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 22rem;
+    }
+
+    .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1 1 45%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 90.1rem) {
+
+    .layout {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 30rem;
+    }
+
+    .content {
+        flex-direction: row;
+    }
+
+    .card {
+        flex: 1;
+        font-size: 1.8rem;
+    }
+}
