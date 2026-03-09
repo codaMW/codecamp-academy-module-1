@@ -1,0 +1,73 @@
+/* =====================
+VARIABLES (IMPROVED UX)
+===================== */
+:root {
+    --bg-main: #f8fafc;
+    --card-bg: #ffffff;
+
+    --primary: #3b82f6;
+    --primary-dark: #2563eb;
+
+    --accent: #6424fb;
+    --text-main: #1f2937;
+    --text-muted: #64748b;
+
+    --shadow-soft: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 1.6rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+/* =====================
+BASE
+===================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: system-ui, Arial, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+
+/* =====================
+LAYOUT
+===================== */
+.layout {
+    max-width: 80rem;
+    margin: 6rem auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--text-main);
+}
+
+/* =====================
+FEATURES
+===================== */
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.feature {
+    background-color: var(--card-bg);
+    padding: 2.6rem;
+    border-radius: 1.4rem;
+    font-size: 1.6rem;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    cursor: pointer;
+}
